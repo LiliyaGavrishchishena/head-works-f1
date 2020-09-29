@@ -1,0 +1,139 @@
+.cars {
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    color: $font-accent;
+    font-style: italic;
+    text-align: left;
+    padding-left: 16px;
+    margin: 0;
+    width: 20%;
+  }
+
+  &__style {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &__after {
+    width: 80%;
+    border-bottom: 3px solid $font-accent;
+  }
+
+  &__list {
+    @extend %list;
+    padding: 0;
+  }
+}
+
+.car__descr {
+  @extend %list;
+  padding-left: 16px;
+  font-weight: 600;
+  font-size: 12px;
+  font-style: italic;
+  color: $font-grey2;
+  line-height: 18px;
+  letter-spacing: 0.03rem;
+  z-index: 2;
+}
+
+.car__img {
+  width: 100%;
+}
+
+.car__profile {
+  @extend %list;
+  background-color: $font-grey4;
+  padding: 10px 16px;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.03rem;
+  margin-bottom: 10px;
+}
+
+.profile__item {
+  margin-bottom: 5px;
+}
+
+.car__testimonials {
+  margin-bottom: 45px;
+}
+
+.testimonials__list {
+  @extend %list;
+  padding: 18px 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.05rem;
+}
+
+@media (min-width: 768px) {
+  .cars {
+    &__title {
+      width: 10%;
+    }
+
+    &__after {
+      width: 90%;
+    }
+  }
+  // .car__info {
+  //   display: flex;
+  //   justify-content: space-between;
+  // }
+  .car__descr {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: right;
+    padding-right: 16px;
+    order: 1;
+  }
+
+  .car__item {
+    padding-left: 128px;
+  }
+
+  // .car__img {
+  //   position: relative;
+  //   width: 804px;
+  // }
+
+  // .car__profile {
+  //   font-size: 16px;
+  //   width: 436px;
+  //   margin-top: 385px;
+  //   background-color: $font-grey4;
+  //   position: absolute;
+  // }
+
+  .car__testimonials {
+    display: flex;
+    flex-direction: row;
+  }
+  .testimonials__list {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media (min-width: 1150px) {
+  .car__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .car__img {
+    position: relative;
+    width: 804px;
+  }
+
+  .car__profile {
+    font-size: 16px;
+    width: 436px;
+    margin-top: 385px;
+    background-color: $font-grey4;
+    position: absolute;
+  }
+}

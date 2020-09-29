@@ -1,0 +1,104 @@
+.banner {
+  position: relative;
+  margin-bottom: 85px;
+
+  &__background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 104px;
+    z-index: -1;
+    background-image: url("../../img/hw-header-background.jpg");
+    background-size: contain;
+  }
+
+  &__inner {
+    @include center-flex("all");
+    flex-direction: column;
+    padding-top: 57px;
+  }
+
+  &__slogan {
+    margin: 0 auto 0 19px;
+    color: $font-grey1;
+    font-size: 10px;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 6px;
+    font-weight: 700;
+    font-size: 48px;
+    color: $font-accent;
+    font-style: italic;
+  }
+
+  &__text {
+    margin: 0 16px 34px auto;
+    font-weight: 600;
+    font-size: 12px;
+    color: $font-grey1;
+  }
+
+  &__img {
+    display: flex;
+    width: 100%;
+    padding-left: 16px;
+  }
+
+  &__img img {
+    width: 212px;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner {
+    &__background {
+      height: 245px;
+    }
+
+    &__inner {
+      padding-top: 90px;
+    }
+
+    &__slogan {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    &__title {
+      font-size: 88px;
+    }
+
+    &__text {
+      font-size: 18px;
+      margin-bottom: 50px;
+    }
+
+    &__img {
+      display: flex;
+      justify-content: flex-end;
+      height: 100%;
+    }
+
+    &__img img {
+      width: 528px;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .banner {
+    &__background {
+      height: 377px;
+    }
+
+    &__text {
+      margin-bottom: 100px;
+    }
+  }
+}

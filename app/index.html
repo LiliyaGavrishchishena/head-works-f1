@@ -1,0 +1,268 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>HeadWorksF1</title>
+      <link rel="stylesheet" href="css/styles.min.css" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;1,700&display=swap"
+        rel="stylesheet"
+      />
+      <script defer src="js/scripts.min.js"></script>
+    </head>
+    <body>
+      <!-- HEADER -->
+      <header id="home" class="header">
+        <div class="header__fixed">
+          <div class="container">
+            <div class="header__inner">
+              <div class="header__burger">
+                <input id="burger" type="checkbox" />
+                <label class="burger__btn" for="burger">
+                  <span></span>
+                </label>
+                <ul class="burger__list">
+                  <li><a class="burger__item" href="#about">About</a></li>
+                  <li><a class="burger__item" href="#drivers">Drivers</a></li>
+                  <li><a class="burger__item" href="#car">Car</a></li>
+                </ul>
+              </div>
+              <a href="#home" class="header__logo">
+                <img src="./img/hw-logo.svg" alt="Head Racing" />
+              </a>
+              <nav class="header__nav">
+                <ul class="nav__list" id="js-menu">
+                  <li class="nav__item">
+                    <a href="#about" class="nav__link">About</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#drivers" class="nav__link">Drivers</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#cars" class="nav__link">Car</a>
+                  </li>
+                </ul>
+              </nav>
+              <a href="#contact" class="header__button">Contact</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <h1 class="visually-hidden">Head Racing</h1>
+        <!-- SECTION BANNER-->
+        <section class="banner">
+          <div class="banner__background"></div>
+          <div class="container">
+            <div class="banner__inner">
+              <p class="banner__slogan">Racing Team</p>
+              <h2 class="banner__title">HeadWorks F1</h2>
+              <p class="banner__text">Code clean,care fast</p>
+              <div class="banner__img">
+                <img src="./img/hw-header-car.png" alt="Car" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION ABOUT -->
+        <section class="about" id="about">
+          <h2 class="about__title">About</h2>
+          <div class="about__inner">
+            <div class="about__img">
+              <ul class="about__list">
+                <li class="about__item">- 153 races</li>
+                <li class="about__item">- 25 podiums</li>
+                <li class="about__item">- 6 wins</li>
+              </ul>
+            </div>
+            <div class="about__text">
+              <p>
+                We are It company that passioned about motorsport. Teamwork,
+                innovations, and modern approaches - principles we are building
+                our team around.
+              </p>
+              <p>
+                With the challenge of making racing cars faster, lighter, and more
+                reliable, Headworks Motosport was born: the company that
+                specializes in the development of innovative methods and the
+                production of high-quality components that never existed before.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION DRIVERS -->
+        <section class="drivers" id="drivers">
+          <div class="drivers__style">
+            <h2 class="drivers__title">Drivers</h2>
+            <div class="drivers__after"></div>
+          </div>
+
+          <ul class="drivers__list">
+            <li class="drivers__item">
+              <div class="drivers__photo">
+                <img
+                src="./img/hw-driver-stig-2.jpg"
+                alt="Javan Scripter"
+                class="drivers__img"/>
+              </div>
+
+              <div class="drivers__info">
+                <div class="drivers__header">
+                  <p class="drivers__position">Fulstack racing driver</p>
+                  <p class="drivers__name">Javan Scripter</p>
+                </div>
+
+                <div class="drivers__footer">
+                  <ul class="driver__list">
+                    <li class="driver__item">Races: <span>122</span></li>
+                    <li class="driver__item">Pole-positions: <span>9</span></li>
+                    <li class="driver__item">Podiums: <span>15</span></li>
+                  </ul>
+                  <ul class="driver__list">
+                    <li class="driver__item">Wins: <span>3</span></li>
+                    <li class="driver__item">
+                      Date of birth: <span>1994/12/10</span>
+                    </li>
+                    <li class="driver__item">
+                      Place of birth: <span>Madrid, Spain</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="drivers__item">
+              <div class="drivers__photo">
+                <img
+                src="./img/hw-driver-stig-1.jpg"
+                alt="Jonny Figmov"
+                class="drivers__img"/>
+              </div>
+
+              <div class="drivers__info">
+                <div class="drivers__header">
+                  <p class="drivers__position">Senior racing driver</p>
+                  <p class="drivers__name">Jonny Figmov</p>
+                </div>
+
+                <div class="drivers__footer">
+                  <ul class="driver__list">
+                    <li class="driver__item">Races: <span>46</span></li>
+                    <li class="driver__item">Pole-positions: <span>0</span></li>
+                    <li class="driver__item">Podiums: <span>4</span></li>
+                  </ul>
+                  <ul class="driver__list">
+                    <li class="driver__item">Wins: <span>0</span></li>
+                    <li class="driver__item">
+                      Date of birth: <span>1998/10/5</span>
+                    </li>
+                    <li class="driver__item">
+                      Place of birth: <span>Madrid, Spain</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- SECTION CARS -->
+        <section class="cars" id="cars">
+          <div class="cars__style">
+            <h2 class="cars__title">Car</h2>
+            <div class="cars__after"></div>
+          </div>
+
+          <ul class="cars__list">
+            <li class="car__item">
+                <div class="car__info">
+                  <ul class="car__descr">
+                    <li class="descr__item">Year:2020</li>
+                    <li class="descr__item">Wins:3</li>
+                    <li class="descr__item">Poles:5</li>
+                    <li class="descr__item">Points:78</li>
+                </ul>
+                <img src="./img/hw-car-car_image.jpg" class="car__img" alt="Car">
+                  <ul class="car__profile">
+                    <li class="profile__item">
+                      Power 950–1,000 horsepower (710–750 kW)
+                    </li>
+                    <li class="profile__item">Weight 733 kg (1,616.0 lb)</li>
+                  </ul>
+                </img>
+              </div>
+
+
+              <div class="car__testimonials">
+                <ul class="testimonials__list">
+                  <li class="testimonials__item">Width 2,000 mm (79 in)</li>
+                  <li class="testimonials__item">Height 950 mm (37 in)</li>
+                  <li class="testimonials__item">
+                    Wheelbase 3,726 mm (146.7 in)
+                  </li>
+                </ul>
+                <ul class="testimonials__list">
+                  <li class="testimonials__item">Width 2,000 mm (79 in)</li>
+                  <li class="testimonials__item">Height 950 mm (37 in)</li>
+                  <li class="testimonials__item">
+                    Wheelbase 3,726 mm (146.7 in)
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <!-- FOOTER  -->
+      <footer class="footer">
+        <div class="footer__text">
+          <a href="#" class="footer__logo">
+            <img src="./img/hw-logo.svg" alt="Head Racing" />
+          </a>
+          <p class="footer__slogan">
+            We are It company that passioned about motorsport. Teamwork,
+            innovations, and modern approaches - principles we are building  our
+            team around.
+          </p>
+        </div>
+
+        <nav class="footer__inner">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#about" class="footer__link">About</a>
+            </li>
+            <li class="footer__item">
+              <a href="#drivers" class="footer__link">Drivers</a>
+            </li>
+            <li class="footer__item">
+              <a href="#car" class="footer__link">Car</a>
+            </li>
+          </ul>
+        </nav>
+        <form id="contact" action="#" class="footer__form">
+          <label for="email"></label>
+          <input
+            class="footer__input"
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Email"
+          />
+          <label for="message"></label>
+          <textarea
+            class="footer__message"
+            id="message"
+            name="message"
+            placeholder="Message"
+            rows="5"
+          ></textarea>
+          <button class="footer__button">Contact</button>
+        </form>
+      </footer>
+    </body>
+  </html>

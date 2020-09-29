@@ -1,0 +1,159 @@
+.drivers {
+  &__title {
+    text-align: left;
+    padding-left: 16px;
+    margin: 0;
+    width: 30%;
+    font-weight: 700;
+    font-size: 36px;
+    color: $font-accent;
+    font-style: italic;
+  }
+
+  &__style {
+    display: flex;
+    margin-bottom: 52px;
+  }
+
+  &__after {
+    width: 70%;
+    border-bottom: 3px solid $font-accent;
+  }
+
+  &__list {
+    @extend %list;
+  }
+
+  &__position {
+    font-weight: 600;
+    font-size: 14px;
+    font-style: italic;
+    padding-right: 16px;
+
+    &:after {
+      content: "";
+      display: block;
+      height: 1px;
+      background-color: $font-grey3;
+      margin-top: 16px;
+    }
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 28px;
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 22px;
+  }
+
+  &__photo {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__img {
+    width: 288px;
+    margin-bottom: 25px;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    line-height: 20px;
+    margin-bottom: 55px;
+    padding-right: 16px;
+  }
+}
+
+.driver__list {
+  @extend %list;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+.driver__list span {
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .drivers {
+    margin-bottom: 50px;
+    &__style {
+      margin-bottom: 105px;
+    }
+
+    &__title {
+      font-size: 48px;
+      width: 20%;
+    }
+
+    &__after {
+      width: 80%;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__item {
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+      margin-bottom: 100px;
+
+      &:nth-child(2n) .drivers__img {
+        order: 1;
+      }
+
+      &:before {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 85%;
+        background-color: $font-grey3;
+        margin-top: 16px;
+        position: absolute;
+        top: -25px;
+      }
+    }
+
+    &__img {
+      width: 344px;
+      height: 452px;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 450px;
+
+      &:nth-child(2n) .drivers__header {
+        text-align: left;
+      }
+    }
+
+    &__header {
+      text-align: right;
+    }
+
+    &__position {
+      font-size: 16px;
+      font-weight: 400;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    &__footer {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

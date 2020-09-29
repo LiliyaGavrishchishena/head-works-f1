@@ -1,0 +1,19 @@
+/*
+   Import partials below
+*/
+@import "helpers/variables";
+@import "helpers/placeholders";
+@import "helpers/mixins";
+@import "helpers/extras";
+@import "normalize";
+@import "base";
+
+// Components
+@import "components/container";
+@import "components/header";
+@import "components/burger";
+@import "components/banner";
+@import "components/about";
+@import "components/drivers";
+@import "components/cars";
+@import "components/footer";

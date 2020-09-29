@@ -1,0 +1,129 @@
+.footer {
+  background-color: $font-grey1;
+  padding: 30px 16px;
+
+  &__logo {
+    width: 105px;
+    height: 48px;
+  }
+
+  &__slogan {
+    color: $font-grey5;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+    letter-spacing: 0.08rem;
+    line-height: 24px;
+    margin-bottom: 26px;
+  }
+
+  &__inner {
+    @include center-flex("all");
+  }
+
+  &__list {
+    @extend %list;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 22px;
+    width: 100%;
+  }
+
+  &__link {
+    @extend %link;
+    font-weight: 400;
+    color: $font-fair;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 16px;
+    display: block;
+    transition-property: color;
+    transition-duration: 0.7s;
+
+    &:hover {
+      color: $font-accent;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    margin-bottom: 16px;
+    border: 2px solid $font-grey2;
+    background-color: $font-grey1;
+    color: $font-fair;
+    padding: 7px;
+
+    &::placeholder {
+      color: $font-fair;
+    }
+  }
+
+  &__message {
+    margin-bottom: 16px;
+    border: 2px solid $font-grey2;
+    background-color: $font-grey1;
+    color: $font-fair;
+    padding: 7px;
+    resize: none;
+
+    &::placeholder {
+      color: $font-fair;
+    }
+  }
+
+  &__button {
+    @extend %link;
+    color: $font-fair;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 2px solid $font-grey2;
+    width: 100%;
+    background-color: $font-grey2;
+    transition-property: background-color color;
+    transition-duration: 0.9s;
+    padding: 10px 10px;
+    margin: 0 16px 0 auto;
+    letter-spacing: 0.08rem;
+
+    &:hover {
+      color: $font-accent;
+      background-color: $font-fair;
+      border: 2px solid $font-accent;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 42px 36px;
+    &__slogan {
+      width: 300px;
+    }
+
+    &__list {
+      flex-direction: column;
+    }
+
+    &__form {
+      width: 252px;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .footer {
+    &__slogan {
+      width: 436px;
+    }
+  }
+}

@@ -1,0 +1,112 @@
+#burger {
+  opacity: 0;
+}
+
+.burger__btn {
+  @include center-flex("all");
+  cursor: pointer;
+  position: fixed;
+  top: 14px;
+  left: 20px;
+  width: 20px;
+  height: 25px;
+  z-index: 10;
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.burger__btn > span,
+.burger__btn > span::before,
+.burger__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: $font-fair;
+}
+
+.burger__btn > span::before {
+  content: "";
+  top: -5px;
+}
+
+.burger__btn > span::after {
+  content: "";
+  top: 5px;
+}
+
+.burger__list {
+  @extend %list;
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 55px;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  z-index: 20;
+  text-align: center;
+  background: $font-grey1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: -1000%;
+    opacity: 0.4;
+    background: $font-grey1;
+  }
+}
+
+.burger__item {
+  @extend %link;
+  display: block;
+  padding: 12px 24px;
+  color: $font-fair;
+  font-size: 18px;
+  font-weight: 600;
+  transition-property: color;
+  transition-duration: 0.7s;
+
+  &:hover {
+    color: $font-accent;
+  }
+}
+
+#burger:checked ~ .burger__btn > span {
+  transform: rotate(45deg);
+}
+
+#burger:checked ~ .burger__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#burger:checked ~ .burger__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#burger:checked ~ .burger__list {
+  visibility: visible;
+  left: 0;
+  @include center-flex("all");
+  flex-direction: column;
+}
+
+.burger__btn > span,
+.burger__btn > span::before,
+.burger__btn > span::after {
+  transition-duration: 0.25s;
+}
+
+@media (min-width: 768px) {
+  .burger__btn {
+    display: none;
+  }
+}
