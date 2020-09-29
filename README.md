@@ -1,4 +1,4 @@
-## [Headworks F1]()
+## [Headworks F1](https://liliyagavrishchishena.github.io/head-works-f1/)
 
 ## How to start project
 
@@ -9,6 +9,6 @@
 
 ## About project
 
-3. Semantic html5
-4. Layout is adopted for mobile devices (mobile-first)
-5. [Bem](https://en.bem.info/methodology/naming-convention/)
+1. Semantic html5
+2. Layout is adopted for mobile devices (mobile-first)
+3. [Bem](https://en.bem.info/methodology/naming-convention/)
